@@ -16,7 +16,16 @@ display:block;
 position:absolute;
 float:left;
 color:#999;
-top:70px;
+bottom:140px;
+left:10px;
+}
+
+.spon2{
+display:block;
+position:absolute;
+right:10px;
+color:#999;
+bottom:120px;
 }
 
 
@@ -25,7 +34,8 @@ display:block;
 position:absolute;
 float:top right;
 color:#000;
-top:90px;
+left:0px;
+bottom:0px;
   width: 240px;
 height:140px;
 
@@ -36,8 +46,8 @@ height:140px;
 .logo2{
 display:block;
 position:absolute;
-top:115px;
-left:290px;
+bottom:20px;
+right:0px;
   width: 90px;
 height:90px;
 
