@@ -29,6 +29,20 @@ bottom:85px;
 }
 
 
+
+.logo3{
+display:block;
+position:absolute;
+float:top right;
+color:#000;
+right:30px;
+top:100px;
+  width: 170px;
+height:50px;
+
+  background: url(../../logo-inria.png) no-repeat center center/cover;
+}
+
 .logo5{
 display:block;
 position:absolute;
@@ -43,18 +57,17 @@ height:100px;
 }
 
 
-
-.logo3{
+.logo6{
 display:block;
 position:absolute;
 float:top right;
 color:#000;
-right:30px;
+left:46%;
 top:100px;
-  width: 170px;
-height:50px;
+  width: 100px;
+height:100px;
 
-  background: url(../../logo-inria.png) no-repeat center center/cover;
+  background: url(../../nipslogo.svg) no-repeat center center/cover;
 }
 
 .logo4{
