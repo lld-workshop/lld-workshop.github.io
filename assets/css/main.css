@@ -57,6 +57,20 @@ height:100px;
 }
 
 
+
+.logo7{
+display:block;
+position:absolute;
+float:top right;
+color:#000;
+left:0px;
+top:100px;
+  width: 170px;
+height:60px;
+
+  background: url(../../SUSig_Stack.png) no-repeat center center/cover;
+}
+
 .logo6{
 display:block;
 position:absolute;
