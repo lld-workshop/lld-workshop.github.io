@@ -29,6 +29,21 @@ bottom:85px;
 }
 
 
+.logo5{
+display:block;
+position:absolute;
+float:top right;
+color:#000;
+right:400px;
+top:90px;
+  width: 70px;
+height:100px;
+
+  background: url(../../ens_logo_tl.png) no-repeat center center/cover;
+}
+
+
+
 .logo3{
 display:block;
 position:absolute;
