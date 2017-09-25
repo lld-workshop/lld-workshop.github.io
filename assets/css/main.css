@@ -16,16 +16,30 @@ display:block;
 position:absolute;
 float:left;
 color:#999;
-bottom:140px;
+bottom:115px;
 left:10px;
 }
 
 .spon2{
 display:block;
 position:absolute;
-right:10px;
+right:100px;
 color:#999;
-bottom:120px;
+bottom:85px;
+}
+
+
+.logo3{
+display:block;
+position:absolute;
+float:top right;
+color:#000;
+right:30px;
+top:100px;
+  width: 170px;
+height:50px;
+
+  background: url(../../logo-inria.png) no-repeat center center/cover;
 }
 
 
@@ -36,9 +50,8 @@ float:top right;
 color:#000;
 left:0px;
 bottom:0px;
-  width: 240px;
-height:140px;
-
+  width: 200px;
+height:120px;
 
   background: url(../../cfm_logo.png) no-repeat center center/cover;
 }
@@ -48,11 +61,9 @@ display:block;
 position:absolute;
 bottom:20px;
 right:0px;
-  width: 90px;
-height:90px;
-
-background-color:red;
-  background: url(../../owkinlogo.jpg) no-repeat center center/cover;
+  width: 200px;
+height:60px;
+  background: url(../../Owkin_Logo.png) no-repeat center center/cover;
 }
 
 
