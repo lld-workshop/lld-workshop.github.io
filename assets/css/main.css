@@ -42,6 +42,19 @@ height:50px;
   background: url(../../logo-inria.png) no-repeat center center/cover;
 }
 
+.logo4{
+display:block;
+position:absolute;
+float:top right;
+color:#000;
+right:220px;
+top:109px;
+  width: 150px;
+height:40px;
+
+  background: url(../../KULeuven.png) no-repeat center center/cover;
+}
+
 
 .logo1{
 display:block;
