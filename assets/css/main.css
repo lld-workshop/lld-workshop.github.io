@@ -593,7 +593,7 @@ ul li {
   display: block;
   opacity: 0.3;
   height: 150px;
-  width: 150px;
+  width: 250px;
   margin: 25px auto;
   -webkit-transition: 0.5s all linear;
           transition: 0.5s all linear;
@@ -602,12 +602,9 @@ ul li {
   opacity: 1;
 }
 .partner .partner-box-1 {
-float:left;
-width:1000px;
-height:1000px;
   background: url(../../cfm_logo.png) no-repeat center center/contain;
 }
-.partner .partner-box-2 {float:right;
+.partner .partner-box-2 {
   background: url(../../owkinlogo.jpg) no-repeat center center/contain;
 }
 .partner .partner-box-3 {
