@@ -123,12 +123,11 @@ height:60px;
 
 
 @media screen 
-  and (device-width: 320px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 2) 
+  and (max-width:480px) 
+
 {
     // insert here your custom styles
-    .logp3 .logo4 .logo5 .logo6 .logo7  {
+    .logo3 .logo4 .logo5 .logo6 .logo7  {
        display:none;
     }
 }
