@@ -249,8 +249,7 @@ button:focus {
 	font-family: 'Montserrat', sans-serif;
 	display: inline-block;
 	font-weight: 600;
-	background: #fff;
-
+	/* background: #fff; */
 }
 
 
