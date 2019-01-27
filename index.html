@@ -1,697 +1,918 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>LLD Workshop - NIPS 2017</title>
-
-    <!-- css -->
-<link rel="icon" href="favicon.png" type="image/gif">
-
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-</head>
-<body data-spy="scroll" data-target="#site-nav">
-    <nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
-        <div class="container">
-            <div class="navbar-header">
-
-                <!-- logo -->
-                <div class="site-branding">
-                    <a class="logo" href="index.html">
-                        
-
-                        <img src="LLD_logo.png" alt="Logo"  height="75"  vspace="5px">
-
-                       LLD Workshop 2017
-                    </a>
-                </div>
-
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-
-            </div><!-- /.navbar-header -->
-
-            <div class="collapse navbar-collapse" id="navbar-items">
-                <ul class="nav navbar-nav navbar-right">
-
-                    <!-- navigation menu -->
-                    <li class="active"><a data-scroll href="#about">Overview</a></li>
-                    <li><a data-scroll href="#speakers">Speakers</a></li>              
-                                  <li><a data-scroll href="#contribution">Submission and Dates</a></li>
-                    <li><a data-scroll href="#schedule">Schedule</a></li>    
-                    <li><a data-scroll href="#papers">Papers</a></li>    
-
-                                       <li><a data-scroll href="#partner">Sponsors</a></li>   
-                    <li><a data-scroll href="#people">People</a></li>                  
-
-                    <!-- <li><a data-scroll href="#">Sponsorship</a></li>
-                    <li><a data-scroll href="#peop">Organizers</a></li>
-               <li><a data-scroll href="#photos">Photos</a></li>-->
-                
-                </ul>
-            </div>
-        </div><!-- /.container -->
-    </nav>
-
-    <header id="site-header" class="site-header valign-center"> 
-
-
-        <div class="intro">
-<!--<div class="spon">Sponsored by</div>
-<div class="spon2">Sponsored by</div>
-<a href="https://www.stanford.edu" class = "logo7"></a>
-<a href="https://nips.cc/Conferences/2017/Schedule?showEvent=9478" class = "logo6"></a>
-<a href="http://www.ens.fr" class = "logo5"></a>
-<a href="http://www.kuleuven.be" class = "logo4"></a>
-<a href="http://www.inria.fr" class = "logo3"></a>
-<a href="http://www.cfm.fr" class = "logo1"></a>
-<a href="http://www.owkin.com" class = "logo2"></a>-->
-            <h2>Sat Dec 9th, 8.30AM-6.30PM</h2>
-            
-            <h1>Learning with Limited Labeled Data:</br> Weak Supervision and Beyond</h1>
-            
-            <p>NIPS 2017</p>
-            
-            <!--<a class="btn btn-white" data-scroll href="#contribution">Submit a contribution</a>-->
-        
-        </div>
-    </header>
-
-    <section id="about" class="section about">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-
-                    <h3 class="section-title">Overview</h3>
-
-                    <p>Modern representation learning techniques like deep neural networks have had a major impact both within and beyond the field of machine learning, achieving new state-of-the-art performances with little or no feature engineering on a vast array of tasks. However, these gains are often difficult to translate into real-world settings as they require massive hand-labeled training sets. And in the vast majority of real-world settings, collecting such training sets by hand is infeasible due to the cost of labeling data or the paucity of data in a given domain (e.g. rare diseases in medical applications). In this workshop we focus on techniques for few sample learning and using weaker supervision when large unlabeled datasets are available, as well as theory associated with both.</p>
-
-<p>One increasingly popular approach is to use weaker forms of supervision—i.e. supervision that is potentially noisier, biased, and/or less precise. An overarching goal of such approaches is to use domain knowledge and resources from subject matter experts, but to solicit it in higher-level, lower-fidelity, or more opportunistic ways. Examples include higher-level abstractions such as heuristic labeling rules, feature annotations, constraints, expected distributions, and generalized expectation criteria; noisier or biased labels from distant supervision, crowd workers, and weak classifiers; data augmentation strategies to express class invariances; and potentially mismatched training data such as in multitask and transfer learning settings.
-</p>
-
-                 
-
-                </div><!-- /.col-sm-6 -->
-
-                <div class="col-sm-6">
-
-                    <!--<h3 class="section-title multiple-title">What is Our Goal?</h3>-->
-
-                    <p>Along with practical methods and techniques for dealing with limited labeled data settings, this workshop will also focus on the theory of learning in this general setting. Although several classic techniques in the statistical learning theory exist which handle the case of few samples and high dimensions, extending these results for example to the recent success of deep learning is still a challenge. How can the theory or the techniques that have gained success in deep learning be adapted to the case of limited labeled data? How can systems designed (and potentially deployed) for large scale learning be adapted to small data settings? What are efficient and practical ways to incorporate prior knowledge? This workshop will focus on highlighting both practical and theoretical aspects of learning with limited labeled data, including but not limited to topics such as:
-<ul class="list-arrow-right">
-<li>Learning from noisy labels</li>
-<li>Distant or heuristic supervision</li>
-<li>Non-standard labels such as feature annotations, distributions, and constraints</li>
-<li>Zero-shot, one-shot, transfer, and multi-task learning</li>
-<li>Data augmentation and/or the use of simulated data</li>
-<li>Frameworks that can tackle both very few samples and settings with more data without
-extensive intervention</li>
-<li>Effective and practical techniques for incorporating domain knowledge</li>
-<li>Applications of machine learning for small data problems in medical images and industry.</li>
-</p>
-
-   
-
-                </div><!-- /.col-sm-6 -->
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </section>
-
-    <section id="facts" class="section bg-image-1 facts text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3">
-
-                    <i class="ion-ios-calendar"></i>
-                    <h3>December 9 2017</h3>
-                
-                </div>
-                <div class="col-sm-3">
-
-                    <i class="ion-ios-location"></i>
-                    <h3>Location Grand Ballroom B</h3>
-                
-                </div>
-                <div class="col-sm-3">
-
-                    <i class="ion-pricetags"></i>
-                    <h3>890 Seats</h3>
-                
-                </div>
-                <div class="col-sm-3">
-                
-                    <i class="ion-speakerphone"></i>
-                    <h3>10 Speakers</h3>
-                
-                </div>
-            </div><!-- row -->
-        </div><!-- container -->
-    </section>
-
-    <section id="speakers" class="section speakers">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-
-                    <h3 class="section-title">Speakers</h3>
-                
-                </div>
-            </div>
- <div class="row">
-                <div class="col-md-4">
-                    <div class="speaker">
-
-                        <figure>
-                            <a href="https://people.cs.umass.edu/~mccallum/"><img alt=""  src="https://people.cs.umass.edu/~mccallum/photos/mccallum-bw.jpg" height="200px"></a>
-                        </figure>
-
-                            <h4>Andrew McCallum</h4>
-
-                        <p>University of Massachusetts Amherst</p>
-
-                        <ul class="social-block">
-                            <li></li>
-                        </ul>
-                    </div><!-- /.speaker -->
-                </div><!-- /.col-md-4 -->
-
-                <div class="col-md-4">
-                    <div class="speaker">
-
-                        <figure>
-                            <a href="http://www.cs.cmu.edu/~tom/"><img alt=""  src="http://mediad.publicbroadcasting.net/p/wamc/files/styles/x_large/public/201401/tom_mitchell.jpg" height="200px"></a>
-                        </figure>
-
-                        <h4>Tom Mitchell</h4>
-
-                        <p>Carnegie Mellon University</p>
-
-                        
-
-                    </div><!-- /.speaker -->
-                </div><!-- /.col-md-4 -->
-
-
- <div class="col-md-4">
-                    <div class="speaker">
-
-                        <figure>
-                            <a href="http://gael-varoquaux.info/"><img alt="" src="http://gael-varoquaux.info/images/gael.png" height="200px"></a>
-                        </figure>
-
-                        <h4>Gaël Varoquaux</h4>
-
-                        <p>INRIA</p>
-
-                        
-
-                    </div><!-- /.speaker -->
-                </div><!-- /.col-md-4 -->
-</div>
- <div class="row">
-<div class="col-md-4">
-                    <div class="speaker">
-
-                        <figure>
-                            <a href="http://www.iangoodfellow.com/"><img alt="" src="https://avatars3.githubusercontent.com/u/387866?v=4&s=400" height="200px"></a>
-                        </figure>
-
-                        <h4>Ian Goodfellow</h4>
-
-                        <p>Google Brain</p>
-
-                        
-
-                    </div>
-
-</div>
-
-<div class="col-md-4">
-	<div class="speaker">
-
-                        <figure>
-                            <a href="http://www.riedelcastro.org/"><img alt="" src="http://www0.cs.ucl.ac.uk/people/photos/S.Riedel.jpg" height="200px"></a>
-                        </figure>
-
-                        <h4>Sebastian Riedel</h4>
-
-                        <p>University College London/Bloomsbury AI.</p>
-
-                        
-
-                    </div><!-- /.speaker -->
-                </div><!-- /.col-md-4 -->
-
-
-<div class="col-md-4">
-	<div class="speaker">
-
-                        <figure>
-                            <a href="http://www.cs.toronto.edu/~urtasun/"><img alt="" src="https://www.nextcanada.com/TheNextAI/raquel_uoft.jpg" height="200px"></a>
-                        </figure>
-
-                        <h4>Raquel Urtasun</h4>
-
-                        <p>University of Toronto/Uber ATG Toronto</p>
-
-                        
-
-                    </div><!-- /.speaker -->
-                </div><!-- /.col-md-4 -->
-
-            </div><!-- /.row -->
- <div class="row">
-<div class="col-md-4">
-                    <div class="speaker">
-
-                        <figure>
-                            <a href="http://www.cs.cmu.edu/~ninamf/"><img alt="" src="http://www.cs.cmu.edu/~ninamf/nina_small2.jpg" height="200px"></a>
-                        </figure>
-
-                        <h4>Nina Balcan</h4>
-
-                        <p>Carnegie Mellon University</p>
-
-                        
-
-                    </div>
-
-</div>
-
-<div class="col-md-4">
-	<div class="speaker">
-
-                        <figure>
-                            <a href="http://aritter.github.io/"><img alt="" src="http://aritter.github.io/images/me.png" height="200px"></a>
-                        </figure>
-
-                        <h4>Alan Ritter</h4>
-
-                        <p>The Ohio State University.</p>
-
-                        
-
-                    </div><!-- /.speaker -->
-                </div><!-- /.col-md-4 -->
-
-<div class="col-md-4">
-	<div class="speaker">
-
-                        <figure>
-                            <a href="https://profiles.stanford.edu/daniel-rubin"><img alt="" src="https://cap.stanford.edu/profiles/viewImage?profileId=10416&type=square&ts=1509536265169" height="200px"></a>
-                        </figure>
-
-                        <h4>Daniel Rubin</h4>
-
-                        <p>Stanford</p>
-
-                        
-
-                    </div><!-- /.speaker -->
-                </div><!-- /.col-md-4 -->
-
-
-
-            </div><!-- /.row -->
-
-<div class="row">
-<div class="col-md-4">
-                    <div class="speaker">
-
-                        <figure>
-                            <a href="http://www.stanfordchildrens.org/en/doctor/default?id=matthew-p-lungren"><img alt="" src="http://www.stanfordchildrens.org/content-public/doctor/matthew-p-lungren/matthew-p-lungren.jpg" height="200px"></a>
-                        </figure>
-
-                        <h4>Matthew Lungren</h4>
-
-                        <p>Stanford</p>
-
-                        
-
-                    </div>
-
-</div>
-
-
-
-
-
-            </div><!-- /.row -->
-
-
-</div>
-
-    </section>
-
-    
-
-    <section id="contribution" class="section bg-image-2 contribution">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3 class="text-uppercase mt0 font-400">Submit a Contribution</h3>
-                    
-                    <p>Please format your papers using the standard NIPS 2017 style files. The page limit is 5 pages (excluding references).<br> Please do not include author information, submissions must be made anonymous. All accepted papers will be presented as posters(poster dimensions: 36 x 48 in. (91cm x 122cm)), with exceptional submissions also presented as <b>oral talks</b>.</p>
-
-<p>We are pleased to announce that our sponsors, Owkin (2 awards of $500 each) and CFM (2 awards of $500 each), will provide <b> best paper awards</b>.</p>
-
-<ul class="list-arrow-right">
-<li>Submission site:  <a href="https://easychair.org/conferences/?conf=lld2017">https://easychair.org/conferences/?conf=lld2017</a></li>
-<li>Style files: <a href="https://nips.cc/Conferences/2017/PaperInformation/StyleFiles">https://nips.cc/Conferences/2017/PaperInformation/StyleFiles</a></li>
-<li>Submissions are reviewed through a confidential double-blind process.</li>
-<li>Cross-submissions are allowed, yet please clearly indicate if the submitted work has been presented somewhere else. Accepted papers will not be archived, thus submission does not preclude publications in other venues.</li>
-<li>We strongly encourage at least one author per submission to attend the workshop to present in person, however due to registration difficulties this year, submissions with no attending authors will still be considered.</li>
-<li>Email organizing chairs: <a href="mailto:lld2017[at]googlegroups[dot]com">lld2017[at]googlegroups[dot]com</a></li>
-</ul>
-
-<br />
-<h3 class="text-uppercase mt0 font-400">Important dates</h3>
-<ul class="list-arrow-right">
-<li>Submission deadline: <strike>November 3, 2017, 23:59 EST</strike></li>
-<li>Notification of acceptance: <strike>November 15, 2017</strike></li>
-<li>Camera-ready Due: <strike>December 1, 2017</strike></li>
-<li>Workshop: <font color="red">December 9, 2017</font></li>
-</ul>
-
-
-                   <!-- <a class="btn btn-white" href="#">Submit</a>-->
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="schedule" class="section schedule">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3 class="section-title">Event Schedule</h3>
-
-
-8:30 AM:    Welcome</br>
-8:40 AM:    Invited Talk: Gaël Varoquaux</br>
-9:10 AM:    Invited Talk: Tom Mitchell</br>
-9:40 AM:    Contributed Talk 1: Yucen Luo, <i>Smooth Neighbors on Teacher Graphs for Semi-supervised Learning</i></br>
-9:55 AM:    1-minute poster spotlights</br>
-10:15 AM:  <a href="#poster1">Poster Session 1</a>/ Coffee Break</br>
-11:00 AM:  Invited Talk: Andrew McCallum</br>
-11:30 AM:  Invited Talk: Sebastian Riedel</br>
-12:00 PM:  Lunch</br>
-2:00 PM:    Panel: Daniel Rubin, Matt Lungren</br>
-2:30 PM:    1-minute poster spotlights</br>
-2:50 PM:    <a href="#poster2">Poster Session 2</a> / Coffee Break</br>
-3:30 PM:    Invited Talk: Nina Balcan</br>
-4:00 PM:    Contributed Talk 2: Maxim Grechkin, <i>EZLearn: Exploiting Organic Supervision in Large-Scale Data Annotation</i></br>
-4:15 PM:    Invited Talk: Raquel Urtasun</br>
-4:45 PM:    Invited Talk: Ian Goodfellow</br>
-5:15 PM:    Contributed Talk 3, Tatjana Chavdarova (on behalf of Suraj Srinivas), <i>Local Affine Approximators of Deep Neural Nets for Improving Knowledge Transfer</i></br>
-5:30 PM:    Contributed Talk 4, Elaheh Raisi, <i>Co-trained Ensemble Models for Weakly Supervised Cyberbullying Detection</i></br>
-5:45 PM:    Invited Talk: Alan Ritter</br>
-6:15 PM:    Award ceremony</br>
-6:25 PM:    Closing Remarks</br>
-
-                </div>
-            </div>
-           </div>
-    </section>
-
-    <section id="partner" class="section partner">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3 class="section-title">Workshop Sponsors</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-3">
-                    <a class="partner-box partner-box-1" href="https://www.cfm.fr/"></a>
-                </div>
-                <div><!-- class="col-sm-3">-->
-                    <a class="partner-box partner-box-2" href="http://owkin.com/"></a>
-                </div>
-                
-            </div>
-</div>
-
-    
-    </section>
-<a id="poster1"></a>
-    <section id="papers" class="section faq">
-        <div class="container">
-            <div class="row">
-
-                    <h3 class="section-title">Accepted papers</h3>
-Papers marked with an asterisk <font color="blue">(*)</font> have been proposed  for an award nomination: only 4 will receive it!
-<h4>Session Poster 1</h4>
-
-<style>.accepted {clear:right;margin-bottom:20pt;padding:3pt}</style><style>.abstract {border-left: solid black 1px;border-right: solid black 1px;border-top: solid black 1px;padding:3pt}</style><style>.title {font-style:italic}</style><style>.authors {font-size:14px}</style>
-
-<div class="paper"><font color="blue">(*)</font><span class="authors"><span><a href="http://ml.cs.tsinghua.edu.cn/~yucen/">Yucen Luo</a>, <a href="http://ml.cs.tsinghua.edu.cn/~jun/">Jun Zhu</a>, Mengxi Li, Yong Ren and Bo Zhang</span>. </span><span class="title">Smooth Neighbors on Teacher Graphs for Semi-supervised Learning</span>, <a href="papers/LLD_2017_paper_3.pdf">pdf</a></div>
-
-<div class="paper"><span class="authors"><span>Hongyu Ren, Russell Stewart, Jiaming Song, Volodymyr Kuleshov and Stefano Ermon</span>. </span><span class="title">Structured Prediction with Adversarial Constraint Learning</span>, <a href="papers/LLD_2017_paper_5.pdf">pdf</a></div>
-
-<div class="paper"><span class="authors"><span>Dennis Forster, Abdul-Saboor Sheikh and Jörg Lücke</span>. </span><span class="title">Neural Simpletrons – Learning in the Limit of Few Labels with Directed Generative Networks</span>, <a href="papers/LLD_2017_paper_6.pdf">pdf</a></div>
-
-<div class="paper"><span class="authors">Nazanin Zounemat Kermani. </span><span class="title">Identifying Novel Peroxisomal Proteins by Multiple Kernel Learning (MKL) and likely Positive-Iterative Classification (LP-IC)</span><!-- TO BE NOT PUBSLIHED, <a href="LLD_2017_paper_7.pdf">pdf</a>--></div>
-
-<div class="paper"><span class="authors"><span><a href="http://raphagl.com">Raphael Gontijo Lopes</a>, Stefano Fenu and Thad Starner</span>. </span><span class="title">Data-Free Knowledge Distillation for Deep Neural Networks</span>, <a href="papers/LLD_2017_paper_8.pdf">pdf</a></div>
-
-<div class="paper"><span class="authors"><span>David Inouye, Pradeep Ravikumar, Pradipto Das and Ankur Datta</span>. </span><span class="title">Hyperparameter Selection under Localized Label Noise via Corrupt Validation</span>, <a href="papers/LLD_2017_paper_9.pdf">pdf</a></div>
-
-<div class="paper"><span class="authors"><span>Petr Babkin, Md Faisal Chowdhury, Alfio Gliozzo, Martin Hirzel and Avraham Shinnar</span>. </span><span class="title">Bootstrapping Chatbots for Novel Domains</span>, <a href="papers/LLD_2017_paper_10.pdf">pdf</a></div>
-
-<div class="paper"><span class="authors"><span><a href="https://users.soe.ucsc.edu/~mderezin/">Michal Derezinski</a> and <a href="http://www.soe.ucsc.edu/~manfred/">Manfred Warmuth</a></span>. </span><span class="title">Subsampling for Ridge Regression via Regularized Volume Sampling</span>, <a href="papers/LLD_2017_paper_11.pdf">pdf</a></div>
-
-<div class="paper"><font color="blue">(*)</font><span class="authors"><span>Nathan Hodas, Aryk Anderson, Artem Yankov, Kyle Schaffer and <a href="http://www.pnl.gov">Courtney Corley</a></span>. </span><span class="title">Beyond Fine Tuning: Adding capacity to leverage few labels.</span>, <a href="papers/LLD_2017_paper_12.pdf">pdf</a></div>
-
-<div class="paper"><span class="authors"><span>Bin Yu, Daniel Gray, Martine De Cock and Anderson Nascimento</span>. </span><span class="title">Training Malicious Domain Name Classifiers with Real, Heuristically Labeled Data</span>, <a href="papers/LLD_2017_paper_13.pdf">pdf</a></div>
-
-<div class="paper"><span class="authors"><span>Han Zhao, Otilia Stretcu, Renato Negrinho, Alex Smola and Geoff Gordon</span>. </span><span class="title">Efficient Multi-task Feature and Relationship Learning</span>, <a href="papers/LLD_2017_paper_15.pdf">pdf</a></div>
-
-<div class="paper"><span class="authors"><span>Zhipeng Luo and <a href="http://people.cs.pitt.edu/~milos/index.html">Milos Hauskrecht</a></span>. </span><span class="title">Active Learning of Classification Models from Soft-Labeled Groups</span>, <a href="papers/LLD_2017_paper_17.pdf">pdf</a></div>
-
-<div class="paper"><span class="authors"><span>Jialin Song, Ravi Lanka, Albert Zhao, <a href="http://www.yisongyue.com">Yisong Yue</a> and Masahiro Ono</span>. </span><span class="title">Learning to Search via Self-Imitation with Application to Risk-Aware Planning</span>, <a href="papers/LLD_2017_paper_18.pdf">pdf</a></div>
-
-<div class="paper"><span class="authors"><span><a href="https://sites.google.com/a/utexas.edu/twankim/">Taewan Kim</a> and Joydeep Ghosh</span>. </span><span class="title">Relaxed Oracles for Semi-Supervised Clustering</span>, <a href="papers/LLD_2017_paper_19.pdf">pdf</a></div>
-
-<div class="paper"><span class="authors"><span><a href="http://www.ece.umd.edu/~zcui/">Zhe Cui</a> and <a href="http://www.shivanirao.info/">Shivani Rao</a></span>. </span><span class="title">Video to Skill Tagging using Transcripts under Weak Supervision</span>, <a href="papers/LLD_2017_paper_21.pdf">pdf</a></div>
-
-<div class="paper"><span class="authors"><span>Rui Shu, Hung Bui and Stefano Ermon</span>. </span><span class="title">A DIRT-T Approach to Unsupervised Domain Adaptation</span>, <a href="papers/LLD_2017_paper_22.pdf">pdf</a></div>
-
-<div class="paper"><span class="authors"><span>Sheng Lundquist, Melanie Mitchell and Garrett Kenyon</span>. </span><span class="title">Sparse Coding on Stereo Video for Object Detection</span>, <a href="papers/LLD_2017_paper_24.pdf">pdf</a></div>
-
-<div class="paper"><span class="authors"><span><a href="http://homepage.ssriva.me">Shashank Srivastava</a>, Igor Labutov and Tom Mitchell</span>. </span><span class="title">Learning Classifiers from Declarative Language</span><!-- NOT TO BE UPLOADED+CHANGE TITLE, <a href="LLD_2017_paper_25.pdf">pdf</a>--></div>
-
-<div class="paper"><font color="blue">(*)</font><span class="authors"><span>Suraj Srinivas and Francois Fleuret</span>. </span><span class="title">Local Affine Approximators for Improving Knowledge Transfer</span>, <a href="papers/LLD_2017_paper_28.pdf">pdf</a></div>
-
-
-<div class="paper"><span class="authors"><span>Yao-Hung Hubert Tsai and Ruslan Salakhutdinov</span>. </span><span class="title">Improving One-Shot Learning through Fusing Side Information</span>, <a href="papers/LLD_2017_paper_31.pdf">pdf</a></div>
-
-<div class="paper"><span class="authors"><span>Steven Hickson, Anelia Angelova, Irfan Essa and Rahul Sukthankar</span>. </span><span class="title">Object category learning and retrieval with weak supervision</span>, <a href="papers/LLD_2017_paper_33.pdf">pdf</a></div>
-
-<div class="paper"><span class="authors"><a href="http://vyraun.github.io">Vikas Raunak</a>. </span><span class="title">Simple and Effective Dimensionality Reduction for Word Embeddings</span>, <a href="papers/LLD_2017_paper_34.pdf">pdf</a></div>
-
-
-
-<a id="poster2"></a>
-<h4>Session Poster 2</h4>
-<div class="paper"><font color="blue">(*)</font><span class="authors"><span><a href="http://people.cs.vt.edu/~elaheh">Elaheh Raisi</a> and <a href="http://people.cs.vt.edu/~bhuang/">Bert Huang</a></span>. </span><span class="title">Co-trained Ensemble Models for Weakly Supervised Cyberbullying Detection</span>, <a href="papers/LLD_2017_paper_35.pdf">pdf</a></div>
-
-<div class="paper"><span class="authors"><span><a href="http://www.cl.uni-heidelberg.de/~marasovic/">Ana Marasovic</a> and <a href="http://www.cl.uni-heidelberg.de/~frank">Anette Frank</a></span>. </span><span class="title">SRL4ORL: Improving Opinion Role Labelling using Multi-task Learning with Semantic Role Labeling</span>, <a href="papers/LLD_2017_paper_36.pdf">pdf</a></div>
-
-<div class="paper"><span class="authors"><span>Katharina Kann, Jesus Manuel Mager Hois, Ivan Vladimir Meza Ruiz and Hinrich Schütze</span>. </span><span class="title">Improving Neural Morphological Segmentation for Polysynthetic Minimal-Resource Languages</span><!-- NOT PUBLISHED, <a href="LLD_2017_paper_37.pdf">pdf</a>--></div>
-
-<div class="paper"><span class="authors"><span><a href="http://researcher.ibm.com/researcher/view.php?person=us-cicerons">Cicero Nogueira Dos Santos</a>, Kahini Wadhawan and Bowen Zhou</span>. </span><span class="title">Learning Loss Functions for Semi-supervised Learning via Discriminative Adversarial Networks</span>, <a href="papers/LLD_2017_paper_38.pdf">pdf</a></div>
-
-<div class="paper"><font color="blue">(*)</font><span class="authors"><span>Maxim Grechkin, Hoifung Poon and <a href="https://faculty.washington.edu/billhowe/">Bill Howe</a></span>. </span><span class="title">EZLearn: Exploiting Organic Supervision in Large-Scale Data Annotation</span>, <a href="https://arxiv.org/pdf/1709.08600.pdf">pdf</a></div>
-
-<div class="paper"><span class="authors"><span><a href="http://www.cs.toronto.edu/~mren">Mengye Ren</a>, Eleni Triantafillou, Sachin Ravi, Jake Snell, Kevin Swersky, Joshua Tenenbaum, Hugo Larochelle and Richard Zemel</span>. </span><span class="title">Meta-Learning for Semi-Supervised Few-Shot Classification</span>, <a href="papers/LLD_2017_paper_40.pdf">pdf</a></div>
-
-<div class="paper"><span class="authors"><span>Pierre Courtiol, <a href="http://eric-tramel.github.io">Eric Tramel</a>, Marc Sanselme and <a href="http://owkin.com">Gilles Wainrib</a></span>. </span><span class="title">Classification and Disease Localization in Histopathology Using Only Global Labels: A Weakly-Supervised Approach</span>, <a href="papers/LLD_2017_paper_41.pdf">pdf</a></div>
-
-<div class="paper"><span class="authors"><span><a href="http://josvanderwesthuizen.github.io">Jos van der Westhuizen</a>, <a href="http://www-sigproc.eng.cam.ac.uk/~jl">Joan Lasenby</a>, Tris Edwards, Raphael Schmetterling, Robert Tinn, Oliver Armitage and Emil Hewage</span>. </span><span class="title">Using adversarial autoencoders to infer actions from the peripheral nervous system</span>, <a href="papers/LLD_2017_paper_42.pdf">pdf</a></div>
-
-<div class="paper"><span class="authors"><span>Liane Canas, Benjamin Yvernault, Carole Sudre, M Jorge Cardoso, John Thornton, Frederik Barkhof, Sebastien Ourselin, Simon Mead and Marc Modat</span>. </span><span class="title">Multikernel Gaussian Processes for patient stratification from imaging biomarkers with heterogeneous patterns</span>, <a href="papers/LLD_2017_paper_43.pdf">pdf</a></div>
-
-<div class="paper"><span class="authors"><span>Esube Bekele and Wallace Lawson</span>. </span><span class="title">Learning by Generation with Mental Imagery from Limited Labeled Dataset</span>, <a href="papers/LLD_2017_paper_44.pdf">pdf</a></div>
-
-<div class="paper"><span class="authors"><span>Sabina Tomkins, <a href="http://www.cs.umd.edu/users/getoor">Lise Getoor</a>, Yunfei Chen and Yi Zhang</span>. </span><span class="title">Detecting Cyber-bullying from Sparse Data and Inconsistent Labels</span>, <a href="papers/LLD_2017_paper_45.pdf">pdf</a></div>
-
-<div class="paper"><span class="authors"><span><a href="http://web.mit.edu/dubeya/www">Abhimanyu Dubey</a>, Otkrist Gupta, Ramesh Raskar, Iyad Rahwan and Nikhil Naik</span>. </span><span class="title">Regularizing Prediction Entropy Enhances Deep Learning with Limited Data</span>, <a href="papers/LLD_2017_paper_47.pdf">pdf</a></div>
-
-<div class="paper"><span class="authors"><span><a href="http://kejriwalresearch.azurewebsites.net">Mayank Kejriwal</a>, Jiayuan Ding, Runqi Shao, Anoop Kumar and Pedro Szekely</span>. </span><span class="title">FlagIt: A System for Minimally Supervised Human Trafficking Indicator Mining, <a href="papers/LLD_2017_paper_49.pdf">pdf</a></span></div>
-
-<div class="paper"><span class="authors"><span><a href="http://www.cl.uni-heidelberg.de/~mihaylov/">Todor Mihaylov</a>, <a href="http://www.kozareva.com">Zornitsa Kozareva</a> and <a href="http://www.cl.uni-heidelberg.de/~frank/">Anette Frank</a></span>. </span><span class="title">Neural Skill Transfer from Supervised Language Tasks to Reading Comprehension</span>, <a href="papers/LLD_2017_paper_50.pdf">pdf</a></div>
-
-<div class="paper"><span class="authors"><span>Grigorios Chrysos, Yannis Panagakis and Stefanos Zafeiriou</span>. </span><span class="title">Augmenting the data by linearizing the dynamics</span>, <a href="papers/LLD_2017_paper_51.pdf">pdf</a></div>
-
-<div class="paper"><span class="authors"><span>Saki Shinoda, Daniel Worrall and Gabriel Brostow</span>. </span><span class="title">Virtual Adversarial Ladder Networks For Semi-supervised Learning</span>, <a href="papers/LLD_2017_paper_52.pdf">pdf</a></div>
-
-<div class="paper"><font color="blue">(*)</font><span class="authors"><span>Jingyi Xu, Zilu Zhang, Tal Friedman, Yitao Liang and <a href="http://web.cs.ucla.edu/~guyvdb/">Guy Van den Broeck</a></span>. </span><span class="title">A Semantic Loss Function for Deep Learning Under Weak Supervision</span>, <a href="papers/LLD_2017_paper_53.pdf">pdf</a></div>
-
-<div class="paper"><span class="authors"><span>Mateusz Kozinski, Loic Simon and Frederic Jurie</span>. </span><span class="title">An Adversarial Regularisation for Semi-Supervised Training of Structured Output Neural Networks</span>, <a href="papers/LLD_2017_paper_55.pdf">pdf</a></div>
-
-<div class="paper"><span class="authors"><span>Yu-Xiong Wang, Deva Ramanan and Martial Hebert</span>. </span><span class="title">Learning to Model the Tail</span>, <a href="papers/LLD_2017_paper_58.pdf">pdf</a></div>
-
-<div class="paper"><span class="authors"><span>Manik Dhar, Aditya Grover and Stefano Ermon</span>. </span><span class="title">Sparse-Gen: Combining Sparse Recovery and Generative Modeling for Compressed Sensing</span><!--TO BE NOT UPLOADED, <a href="LLD_2017_paper_59.pdf">pdf</a></div>-->
-
-<div class="paper"><span class="authors"><span><a href="http://www-personal.umich.edu/~aniketde/">Aniket Anand Deshmukh</a>, Srinagesh Sharma, <a href="http://www-personal.umich.edu/~jwcutler/">James Cutler</a> and <a href="http://web.eecs.umich.edu/~cscott/">Clayton Scott</a></span>. </span><span class="title">Multiclass Domain Generalization</span>, <a href="papers/LLD_2017_paper_63.pdf">pdf</a></div>
-
-<div class="paper"><span class="authors"><span>Lijie Fan, <a href="http://szhao.me">Shengjia Zhao</a> and Stefano Ermon</span>. </span><span class="title">Adversarial Localization Network</span>, <a href="papers/LLD_2017_paper_64.pdf">pdf</a></div>
-
-
-
-
-
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Learning with Limited Labeled Data, ICLR 2019</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico"/>
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Slick slider -->
+    <link href="assets/css/slick.css" rel="stylesheet">
+    <!-- Theme color -->
+    <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">
+
+    <!-- Main Style -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Fonts -->
+
+    <!-- Open Sans for body font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet">
+	<!-- Montserrat for title -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+ 
+ 
+	
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  	
+  	<!-- Start Header -->
+	<header id="mu-hero" class="" role="banner">
+		<!-- Start menu  -->
+		<nav class="navbar navbar-fixed-top navbar-default mu-navbar">
+		  	<div class="container">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+
+			      <!-- Logo -->
+			      <!--<a class="navbar-brand" href="index.html"><img src="assets/images/logo_.png" width=80></a>-->
+
+			    </div>
+
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      	<ul class="nav navbar-nav mu-menu navbar-right"><li><img src="assets/images/logo_.png" width=90 style="margin:0px 0px;padding:0px 0px"></li>
+<!--			      		<li><a href="#mu-hero">Home</a></li>-->
+				        <li><a href="#mu-about">Overview</a></li>
+			            <li><a href="#mu-sponsors">Sponsors</a></li>
+			            <li><a href="#mu-speakers">Speakers</a></li>
+				        <li><a href="#mu-schedule">Schedule</a></li>
+
+			            <li><a href="#mu-pricing">Submission/dates</a></li>
+			            <li><a href="#mu-faq">FAQ</a></li>
+			            <li><a href="#mu-register">Papers</a></li>
+			            <li><a href="#mu-contact">People</a></li>
+
+			            <li><a href="https://lld-workshop.github.io/2017">LLD 2017</a></li>
+			      	</ul>
+			    </div><!-- /.navbar-collapse -->
+		  	</div><!-- /.container-fluid -->
+		</nav>
+		<!-- End menu -->
+
+		<div class="mu-hero-overlay">
+			<div class="container">
+				<div class="mu-hero-area">
+
+					<!-- Start hero featured area -->
+					<div class="mu-hero-featured-area">
+						<!-- Start center Logo -->
+						<div class="mu-logo-area">
+							<!-- text based logo -->
+							<!--<a class="mu-logo" href="#"></a>-->
+							<!-- image based logo -->
+							<a class="mu-logo" href="https://iclr.cc/Conferences/2019/Schedule?showEvent=633"><img src="assets/images/logo_.png" alt="logo img"></a> 
+						</div>
+						<!-- End center Logo -->
+
+						<div class="mu-hero-featured-content">
+
+							<h1>
+The 2nd Learning from Limited Labeled Data (LLD) Workshop</h1>
+							<h2> Representation Learning for Weak Supervision and Beyond</h2>
+							<p class="mu-event-date-line">6 - 9 May, 2019. New Orleans, USA</p>
+
+							<div class="mu-event-counter-area">
+								<div id="mu-event-counter">
+									
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<!-- End hero featured area -->
+
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- End Header -->
+	
+	<!-- Start main content -->
+	<main role="main">
+		<!-- Start About -->
+		<section id="mu-about">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="mu-about-area">
+							<!-- Start Feature Content -->
+							<div class="row">
 <!--
-TOO LONG TO DO
-
-<br><i>Smooth Neighbors on Teacher Graphs for Semi-supervised Learning</i>, Yucen Luo, Jun Zhu, Mengxi Li, Yong Ren† and Bo Zhang, <a href="LLD_2017_paper_3.pdf">pdf</a>.
-<br><i>Beyond Fine Tuning: Adding capacity to leverage few labels</i>, Nathan O. Hodas, Kyle Shaffer, Artem Yankov, and Courtney D. Corley, <a href="LLD_2017_paper_12.pdf">pdf</a>.
-<br><i>Co-trained Ensemble Models for Weakly Supervised Cyberbullying Detection</i>, Elaheh Raisi and Bert Huang, <a href="LLD_2017_paper_35.pdf">pdf</a>.
-
-<br><i>Active Learning of Classification Models from Soft-Labeled Groups</i>, Zhipeng Luo and Milos Hauskrecht, <a href="LLD_2017_paper_17.pdf">pdf</a>.
-<br><i> Local Affine Approximators for Improving Knowledge Transfer</i>, Suraj Srinivas and Francois Fleuret, <a href="LLD_2017_paper_28.pdf">pdf</a>.
-<br><i>Classification and Disease Localization in Histopathology Using Only Global Labels: A Weakly-Supervised Approach</i>, Pierre Courtiol, Eric Tramel, Marc Sanselme and Gilles Wainrib, <a href="LLD_2017_paper_41.pdf">pdf</a>.
-<br><i>A Semantic Loss Function for Deep Learning Under Weak Supervision</i>, Jingyi Xu, Zilu Zhang, Tal Friedman, Yitao Liang and Guy Van den Broeck, <a href="LLD_2017_paper_53.pdf">pdf</a>.
-<br><i>An Adversarial Regularisation for Semi-Supervised Training of Structured Output Neural Networks</i>, Mateusz Kozinski, Loic Simon and Frederic Jurie, <a href="LLD_2017_paper_55.pdf">pdf</a>.
-<br><i>EZLearn: Exploiting Organic Supervision in Large-Scale Data Annotation</i>, Maxim Grechkin, Hoifung Poon and Bill Howe, <a href="LLD_2017_paper_39.pdf">pdf</a>.
-<br><i> Improving One-Shot Learning through Fusing Side Information</i>, Yao-Hung Hubert Tsai and Ruslan Salakhutdinov, <a href="LLD_2017_paper_31.pdf">pdf</a>.
+								<div class="col-md-6">
+									<div class="mu-about-left">
+										<img class="" src="assets/images/about.jpg" alt="Men Speaker">
+									</div>
+								</div>
+-->
+								<!--	<div class="col-md-6">
+								<div class="mu-about-right">-->
+										<h2>Overview</h2>
 
 
+<p>Modern representation learning techniques like deep neural networks have had a major impact on a wide range of tasks, achieving new state-of-the-art performances on benchmarks using little or no feature engineering. However, these gains are often difficult to translate into real-world settings because they usually require massive hand-labeled training sets. Collecting such training sets by hand is often infeasible due to the time and expense of labeling data; moreover, hand-labeled training sets are static and must be completely relabeled when real-world modeling goals change.</p>
 
-<br><i> Improving Opinion Role Labelling using Multi-task Learning with Semantic Role Labeling</i>, Ana Marasovic and Anette Frank, <a href="LLD_2017_paper_36.pdf">pdf</a>.
-<br><i>Regularizing Prediction Entropy Enhances Deep Learning with Limited Data</i>, Abhimanyu Dubey, Otkrist Gupta, Ramesh Raskar, Iyad Rahwan and Nikhil Naik, <a href="LLD_2017_paper_47.pdf">pdf</a>.
+<p>Increasingly popular approaches for addressing this labeled data scarcity include using weak supervision---higher-level approaches to labeling training data that are cheaper and/or more efficient, such as distant or heuristic supervision, constraints, or noisy labels; multi-task learning, to effectively pool limited supervision signal; data augmentation strategies to express class invariances; and introduction of other forms of structured prior knowledge. An overarching goal of such approaches is to use domain knowledge and data resources provided by subject matter experts, but to solicit it in higher-level, lower-fidelity, or more opportunistic ways.</p>
 
-<br><i>Co-trained Ensemble Models for Weakly Supervised Cyberbullying Detection</i>, Elaheh Raisi and Bert Huang, <a href="LLD_2017_paper_35.pdf">pdf</a>.
-<br><i>Co-trained Ensemble Models for Weakly Supervised Cyberbullying Detection</i>, Elaheh Raisi and Bert Huang, <a href="LLD_2017_paper_35.pdf">pdf</a>.
-<br><i>Co-trained Ensemble Models for Weakly Supervised Cyberbullying Detection</i>, Elaheh Raisi and Bert Huang, <a href="LLD_2017_paper_35.pdf">pdf</a>.
-<br><i>Co-trained Ensemble Models for Weakly Supervised Cyberbullying Detection</i>, Elaheh Raisi and Bert Huang, <a href="LLD_2017_paper_35.pdf">pdf</a>.
-<br><i>Co-trained Ensemble Models for Weakly Supervised Cyberbullying Detection</i>, Elaheh Raisi and Bert Huang, <a href="LLD_2017_paper_35.pdf">pdf</a>.
-<br><i>Co-trained Ensemble Models for Weakly Supervised Cyberbullying Detection</i>, Elaheh Raisi and Bert Huang, <a href="LLD_2017_paper_35.pdf">pdf</a>.
-<br><i>Co-trained Ensemble Models for Weakly Supervised Cyberbullying Detection</i>, Elaheh Raisi and Bert Huang, <a href="LLD_2017_paper_35.pdf">pdf</a>.
-<br><i>Co-trained Ensemble Models for Weakly Supervised Cyberbullying Detection</i>, Elaheh Raisi and Bert Huang, <a href="LLD_2017_paper_35.pdf">pdf</a>.
-<br><i>Co-trained Ensemble Models for Weakly Supervised Cyberbullying Detection</i>, Elaheh Raisi and Bert Huang, <a href="LLD_2017_paper_35.pdf">pdf</a>.
-<br>-->
-              
-            </div>
-</div>
+<p>In this workshop, we examine these increasingly popular and critical techniques in the context of representation learning. While approaches for representation learning in the large labeled sample setting have become increasingly standardized and powerful, the same is not the case in the limited labeled data and/or weakly supervised case. Developing new representation learning techniques that address these challenges is an exciting emerging direction for research [e.g., 1, 2]. Learned representations have been shown to lead to models robust to noisy inputs, and are an effective way of exploiting unlabeled data and transferring knowledge to new tasks where labeled data is sparse.</p>
 
+<p>In this workshop, we aim to bring together researchers approaching these challenges from a variety of angles. Specifically this includes:
+<ul style="padding-left:45px">
+<li>Learning representations to reweight and de-bias weak supervision</li>
+<li>Representations to enforce structured prior knowledge (e.g. invariances, logic constraints).</li>
+<li>Learning representations for higher-level supervision from subject matter experts</li>
+<li>Representations for zero and few shot learning</li>
+<li>Representation learning for multi-task learning in the limited labeled setting</li>
+<li>Representation learning for data augmentation</li>
+<li>Theoretical or empirically observed properties of representations in the above contexts </li>
+</ul></p>
+
+<p>The second LLD workshop continues the conversation from the 2017 NIPS Workshop on Learning with Limited Labeled Data. <!--LLD 2017 received 65 submissions, of which 44 were accepted and was one of the largest workshops at NIPS 2017. -->Our goal is to once again bring together researchers interested in this growing field. With funding support, we are excited to again organize best paper awards for the most outstanding submitted papers. We also will have seven distinguished and diverse speakers from a range of machine learning perspectives, a panel on where the most promising directions for future research are, and a discussion session on developing new benchmarks and other evaluations for these techniques.</p>
+
+<p><b>The LLD workshop organizers are also committed to fostering a strong sense of inclusion for all groups at this workshop, and to help this concretely, aside from 1K for the paper awards, the remainder of the funding (both current and pending) will sponsor several travel awards specifically for traditionally underrepresented groups. We will also post a code of conduct emphasizing our commitment to inclusion, which we will expect all attendees to uphold.</b></p>
+
+								<!--	</div>
+								</div>-->
+							</div>
+							<!-- End Feature Content -->
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End About -->
+
+
+		<!-- Start Sponsors -->
+		<section id="mu-sponsors">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="mu-sponsors-area">
+							
+							<div class="mu-title-area">
+								<h2 class="mu-title">Our Sponsors</h2>
+								<p>We warmly thanks our generous sponsors to support this event!</p>
+							</div>
+							
+							<!-- Start spnonsors brand logo -->
+							<div class="mu-sponsors-content">
+
+								<div class="row">
+<center><a href="https://www.sfds.asso.fr"><img src="https://www.sfds.asso.fr/img-sfds_logo.png" alt="Brand Logo" height="50px"></a>
+ 
+<a href="http://www.lumenai.fr/"><img src="assets/images/logo-LumenAI.jpg" alt="Brand Logo" style="padding:10px"  height="200px"></a>
+ 
+<img src="assets/images/sponsor-logo-2.png" alt="Brand Logo">
+
+
+								
+								<!--	<div class="col-md-2 col-sm-4 col-xs-4">
+										<div class="mu-sponsors-single">
+										<img src="assets/images/sponsor-logo-2.png" alt="Brand Logo">
+											</div>
+									</div>
+
+									<div class="col-md-2 col-sm-4 col-xs-4">
+										<div class="mu-sponsors-single">
+											<img src="assets/images/sponsor-logo-2.png" alt="Brand Logo">
+										</div>
+									</div>
+
+									<div class="col-md-2 col-sm-4 col-xs-4">
+										<div class="mu-sponsors-single">
+											<img src="assets/images/sponsor-logo-3.png" alt="Brand Logo">
+										</div>
+									</div>-->
+
+</center>
+
+								</div>
+							</div>
+							<!-- End spnonsors brand logo -->
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Sponsors -->
+
+
+
+
+
+
+
+
+		<!-- Start Video -->
+		<section id="mu-video">
+			<div class="mu-video-overlay">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="mu-video-area">
+								<h2>Previous Event Images</h2>
+								<!--<a class="mu-video-play-btn" href="#"><i class="fa fa-play" aria-hidden="true"></i></a>-->
+<img src="assets/images/lld-2017.jpg" width=500 style="float:left">
+<img src="assets/images/lld-2017a.jpg" width=500 style="float:right">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Start Video content -->
+			<div class="mu-video-content">
+				<div class="mu-video-iframe-area">
+					<a class="mu-video-close-btn" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+					<iframe width="854" height="480" src="https://www.youtube.com/embed/n9AVEl9764s" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			<!-- End Video content -->
+
+		</section>
+		<!-- End Video -->
+
+
+		<!-- Start Speakers -->
+		<section id="mu-speakers">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="mu-speakers-area">
+
+							<div class="mu-title-area">
+								<h2 class="mu-title">Our Speakers</h2>
+								<p>Finalization soon.</p>
+							</div>
+
+							<!-- Start Speakers Content -->
+
+							<div class="mu-speakers-content">
+								<div class="mu-speakers-slider">
+
+									<!-- Start single speaker -->
+									<div class="mu-single-speakers">
+										<a href="http://tensorlab.cms.caltech.edu/users/anima/"><center><img src="http://tensorlab.cms.caltech.edu/users/anima/images/DP.png" alt="speaker img"  height="200px"></center></a>
+										<div class="mu-single-speakers-info">
+											<h3><a href="http://tensorlab.cms.caltech.edu/users/anima/">Anima Anandkumar</a></h3>
+											<p>Caltech/NVIDIA</p>
+											<ul class="mu-single-speakers-social">
+												<!--<li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
+												<li><a href="https://twitter.com/animaanandkumar"><i class="fa fa-twitter"></i></a></li>
+												<!--<li><a href="#"><i class="fa fa-linkedin"></i></a></li>-->
+											</ul>
+										</div>
+									</div>
+									<!-- End single speaker -->
+
+									<!-- Start single speaker -->
+									<div class="mu-single-speakers">
+										<center><a href="https://cims.nyu.edu/~bruna/index.shtml"><img src="http://cims.nyu.edu/~bruna/jbphoto.png" alt="speaker img" height="200px"></a></center>
+										<div class="mu-single-speakers-info">
+											<h3><a href="https://cims.nyu.edu/~bruna/index.shtml">Joan Bruna</a></h3>
+											<p>New York University</p>
+											<ul class="mu-single-speakers-social">
+												<!--<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+												<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+												<li><a href="#"><i class="fa fa-linkedin"></i></a></li>-->
+											</ul>
+										</div>
+									</div>
+									<!-- End single speaker -->
+
+
+									<!-- Start single speaker -->
+									<div class="mu-single-speakers">
+										<a href="http://lunadong.com/"><center><img src="http://lunadong.com/profile.jpeg" alt="speaker img" height="200px"></center></a>
+										<div class="mu-single-speakers-info">
+											<h3><a href="http://lunadong.com/">Luna Dong</a></h3>
+											<p>Amazon</p>
+											<ul class="mu-single-speakers-social">
+												<!--<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+												<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+												<li><a href="#"><i class="fa fa-linkedin"></i></a></li>-->
+											</ul>
+										</div>
+									</div>
+									<!-- End single speaker -->
+
+
+									<!-- Start single speaker -->
+									<div class="mu-single-speakers">
+										<a href="https://homes.cs.washington.edu/~alon/"><center><img src="https://pbs.twimg.com/profile_images/673660303138131968/cxwKv5yT_400x400.jpg" height="200px" alt="speaker img"></center></a>
+										<div class="mu-single-speakers-info">
+											<h3><a href="https://homes.cs.washington.edu/~alon/">Alon Halvey</a></h3>
+											<p>University of Washington</p>
+											<ul class="mu-single-speakers-social">
+												<li><a href="https://twitter.com/alonhalevy"><i class="fa fa-twitter"></i></a></li>
+												
+											</ul>
+										</div>
+									</div>
+									<!-- End single speaker -->
+
+
+								</div>
+							</div>
+
+
+							<!-- End Speakers Content -->
+
+							<div class="mu-speakers-content">
+								<div class="mu-speakers-slider">
+
+									<!-- Start single speaker -->
+									<div class="mu-single-speakers">
+										<a href="https://www.cs.washington.edu/people/faculty/lsz"><center><img src="https://s3-us-west-2.amazonaws.com/www-cse-public/images/portraits/lsz_sm.jpg" height="200px" alt="speaker img"></center></a>
+										<div class="mu-single-speakers-info">
+											<h3><a href="https://www.cs.washington.edu/people/faculty/lsz">Luke Zettlemoyer</a></h3>
+											<p>University of Washington</p>
+											<ul class="mu-single-speakers-social">
+												<li><a href="https://twitter.com/lukezettlemoyer?lang=fr"><i class="fa fa-twitter"></i></a></li>
+											</ul>
+										</div>
+									</div>
+									<!-- End single speaker -->
+
+									
+								</div>
+							</div>
+							<!-- End Speakers Content -->
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Speakers -->
+
+
+
+		<!-- Start Schedule  -->
+		<section id="mu-schedule">
+			<div class="container">
+				<div class="row">
+					<div class="colo-md-12">
+						<div class="mu-schedule-area">
+
+							<div class="mu-title-area">
+								<h2 class="mu-title">Schedule Detail</h2>
+								<p>Schedule tentative.</p>
+							</div>
+
+							<div class="mu-schedule-content-area">
+								<!-- Nav tabs -->
+								<ul class="nav nav-tabs mu-schedule-menu" role="tablist">
+								    <li role="presentation" class="active"><a href="#first-day" aria-controls="first-day" role="tab" data-toggle="tab">Morning</a></li>
+								    <li role="presentation"><a href="#second-day" aria-controls="second-day" role="tab" data-toggle="tab">Afternoon</a></li>
+								    
+								    
+								</ul>
+
+								<!-- Tab panes -->
+								<div class="tab-content mu-schedule-content">
+								    <div role="tabpanel" class="tab-pane fade mu-event-timeline in active" id="first-day">
+								    	<ul>
+								    		<li>
+								    			<div class="mu-single-event">
+								    				<p class="mu-event-time">8.30 AM</p>
+								    				<h3>Welcome</h3>
+								    			</div>
+								    		</li>
+								    		<li>
+								    			<div class="mu-single-event">
+								    				<img src="assets/images/speaker-1.jpg" alt="event speaker">
+								    				<p class="mu-event-time">8.40 AM</p>
+								    				<h3>Invited Talk 1</h3>
+								    				<span>By ...</span>
+								    			</div>
+								    		</li>
+								    		<li>
+								    			<div class="mu-single-event">
+								    				<img src="assets/images/speaker-2.jpg" alt="event speaker">
+								    				<p class="mu-event-time">9.10 AM</p>
+								    				<h3>Invited Talk 2</h3>
+								    				<span>By ...</span>
+								    			</div>
+								    		</li>
+								    		<li>
+								    			<div class="mu-single-event">
+								    				<p class="mu-event-time">9.40 AM</p>
+								    				<h3>Contributed Talk 1</h3>
+								    				<span>By ...</span>
+								    			</div>
+								    		</li>
+								    		<li>
+								    			<div class="mu-single-event">
+								    				<p class="mu-event-time">9.55 AM</p>
+								    				<h3>1-minute poster spotlights</h3>
+								    			</div>
+								    		</li>
+
+								    		<li>
+								    			<div class="mu-single-event">
+								    				<p class="mu-event-time">10.30 AM</p>
+								    				<h3>Poster Session 1/Coffee break</h3>
+								    			</div>
+								    		</li>
+								    		<li>
+								    			<div class="mu-single-event">
+								<img src="assets/images/speaker-3.jpg" alt="event speaker">
+								    				<p class="mu-event-time">11.00 AM</p>
+								    				<h3>Invited Talk 4</h3>
+								    				<span>By ...</span>
+								    			</div>
+								    		</li>
+								    		<li>
+								    			<div class="mu-single-event">
+								<img src="assets/images/speaker-3.jpg" alt="event speaker">
+								    				<p class="mu-event-time">11.30 AM</p>
+								    				<h3>Invited Talk 5</h3>
+								    				<span>By ...</span>
+								    			</div>
+								    		</li>
+								    		<li>
+								    			<div class="mu-single-event">
+								    				<p class="mu-event-time">12.00 PM</p>
+								    				<h3>Lunch break</h3>
+								    			</div>
+								    		</li>
+								    	</ul>
+								    </div>
+
+
+
+								    <div role="tabpanel" class="tab-pane fade mu-event-timeline" id="second-day">
+								    									    	<ul>
+								    		<li>
+								    			<div class="mu-single-event">
+								    				<p class="mu-event-time">2.00 PM</p>
+								    				<h3>Panel: “Domain Knowledge vs. Sample Efficiency: Where Should We Focus?”</h3>
+								    			</div>
+								    		</li>
+								    		<li>
+								    			<div class="mu-single-event">
+								    				
+								    				<p class="mu-event-time">3.00 PM</p>
+								    				<h3>1-minute poster spotlights</h3>
+								    			</div>
+								    		</li>
+								    		<li>
+								    			<div class="mu-single-event">
+								    				<p class="mu-event-time">3.30 PM</p>
+								    				<h3>Poster Session 2/Coffee break</h3>
+								    			</div>
+								    		</li>
+								    		<li>
+								    			<div class="mu-single-event">
+								    				<p class="mu-event-time">4.00 PM</p>
+								    				<h3>Contributed Talk 2</h3>
+								    				<span>By ...</span>
+								    			</div>
+								    		</li>
+								    		<li>
+								    			<div class="mu-single-event">
+								<img src="assets/images/speaker-3.jpg" alt="event speaker">
+								    				<p class="mu-event-time">4.15 PM</p>
+								    				<h3>Invited Talk 6</h3>
+								    				<span>By ...</span>
+								    			</div>
+								    		</li>
+								    		<li>
+								    			<div class="mu-single-event">
+								<img src="assets/images/speaker-3.jpg" alt="event speaker">
+								    				<p class="mu-event-time">4.45 PM</p>
+								    				<h3>Invited Talk 7</h3>
+								    				<span>By ...</span>
+								    			</div>
+								    		</li>
+								    		<li>
+								    			<div class="mu-single-event">
+								    				<p class="mu-event-time">5.15 PM</p>
+								    				<h3>Contributed Talk 3</h3>
+								    				<span>By ...</span>
+								    			</div>
+								    		</li>
+								    		<li>
+								    			<div class="mu-single-event">
+								    				<p class="mu-event-time">5.30 PM</p>
+								    				<h3>Contributed Talk 4</h3>
+								    				<span>By ...</span>
+								    			</div>
+								    		</li>
+								    		<li>
+								    			<div class="mu-single-event">
+								    				<p class="mu-event-time">5.45 PM</p>
+								    				<h3>Discussion Session: New Evaluations and Benchmarks with Limited Labeled Data</h3>
+								    			</div>
+								    		</li>
+								    		<li>
+								    			<div class="mu-single-event">
+								    				<p class="mu-event-time">6.15 PM</p>
+								    				<h3>Award Ceremony</h3>
+								    			</div>
+								    		</li>
+								    		<li>
+								    			<div class="mu-single-event">
+								    				<p class="mu-event-time">6.25 PM</p>
+								    				<h3>Closing Remarks</h3>
+								    			</div>
+								    		</li>
+								    	</ul>
+								    </div>
+								    
+								</div>
+
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Schedule -->
+
+
+
+		<!-- Start Venue -->
+		<section id="mu-venue">
+			<div class="mu-venue-area">
+				<div class="row">
+
+					<div class="col-md-6">
+						<div class="mu-venue-map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.2570397959407!2d-90.06627198512149!3d29.943284330299683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8620a66e4538dd25%3A0x4439e9b5b2d17a17!2sNew+Orleans+Ernest+N.+Morial+Convention+Center!5e0!3m2!1sen!2sfr!4v1544458911224" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="mu-venue-address">
+							<h2>VENUE <i class="fa fa-chevron-right" aria-hidden="true"></i></h2>
+							<h3>ICLR 2019, New Orleans, Louisiana</h3>
+							<h4>Ernest N. Morial Convention Center, New Orleans </h4>
+							<!--TODO: <p>Room: ; XXX seats.</p>-->
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<!-- End Venue -->
+
+		<!-- Start Pricing  -->
+		<section id="mu-pricing">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="mu-pricing-area">
+							
+							<div class="mu-title-area">
+								<h2 class="mu-title">Submission and important dates</h2>
+								<p>Please format your papers using the standard ICLR 2019 style files. The page limit is 4 pages (excluding references).
+Please do not include author information, submissions must be made anonymous. All accepted papers will be presented as posters(poster dimensions: TBC), with exceptional submissions also presented as oral talks.</p>
+							</div>
+
+							<div class="mu-pricing-conten">
+								<div class="row">
+									
+									<!-- single price item -->
+									<div class="col-md-4">
+										<div class="mu-single-price" style="height:250px">
+
+						<h2><font color="red">Submission deadline: <br><h4>March 5, 2019, 11.59pm, GMT+1</h4></font></h2>
+											<a class="mu-register-btn" href="#">Submit my paper.</a>
+										</div>
+									</div>
+									<!-- / single price item -->
+
+									<!-- single price item -->
+										<div class="col-md-4">
+										<div class="mu-single-price" style="height:250px">
+
+						<h2><font color="red">Notification of acceptance: <br><h4>April 5, 2019<br>&nbsp;</h4></font></h2>
+											<a class="mu-register-btn" href="#">List of accepted papers.</a>
+										</div>
+									</div>
+									<!-- / single price item -->
+
+									<!-- single price item -->
+										<div class="col-md-4">
+										<div class="mu-single-price" style="height:250px">
+
+						<h2><font color="red">Camera ready due: <br>TBA</font></h2>
+											<!--<a class="mu-register-btn" href="#">List of accepted papers.</a>-->
+										</div>
+									</div>
+									<!-- / single price item -->
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Pricing -->
+
+
+
+
+
+		<!-- Start FAQ -->
+		<section id="mu-faq">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="mu-faq-area">
+
+							<div class="mu-title-area">
+								<h2 class="mu-title">FAQ</h2>
+								<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint assumenda ut molestias doloremque ipsam, fugit laborum totam, pariatur est cumque at, repudiandae officia ex dolores quas minus optio, iusto soluta?</p>-->
+							</div>
+
+							<div class="mu-faq-content">
+
+								<div class="panel-group" id="accordion">
+
+							        <div class="panel panel-default">
+							          <div class="panel-heading">
+							            <h4 class="panel-title">
+							              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true">
+							                <span class="fa fa-angle-down"></span>Where can I find the style files?
+							              </a>
+							            </h4>
+							          </div>
+							          <div id="collapseOne" class="panel-collapse collapse in">
+							            <div class="panel-body">
+							              Please use: <a href="https://github.com/ICLR/Master-Template/archive/ICLR2019.tar.gz">https://github.com/ICLR/Master-Template/archive/ICLR2019.tar.gz</a>							            </div>
+							          </div>
+							        </div>
+
+							        <div class="panel panel-default">
+							          <div class="panel-heading">
+							            <h4 class="panel-title">
+							              <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+							                <span class="fa fa-angle-up"></span> What is the website of submission?
+							              </a>
+							            </h4>
+							          </div>
+							          <div id="collapseTwo" class="panel-collapse collapse">
+							            <div class="panel-body">
+							             Please use: <a href="#"></a>
+							            </div>
+							          </div>
+							        </div>
+
+							        <div class="panel panel-default">
+							          <div class="panel-heading">
+							            <h4 class="panel-title">
+							              <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+							                <span class="fa fa-angle-up"></span>Are cross-submissions allowed?					              </a>
+							            </h4>
+							          </div>
+							          <div id="collapseThree" class="panel-collapse collapse">
+							            <div class="panel-body">
+							              Yes, cross-submissions are allowed, yet please clearly indicate if the submitted work has been presented somewhere else. Accepted papers will not be archived, thus submission does not preclude publications in other venues.
+							            </div>
+							          </div>
+							        </div>
+
+							        <div class="panel panel-default">
+							          <div class="panel-heading">
+							            <h4 class="panel-title">
+							              <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+							                <span class="fa fa-angle-up"></span>How can I contact the organisers?
+							              </a>
+							            </h4>
+							          </div>
+							          <div id="collapseFour" class="panel-collapse collapse">
+							            <div class="panel-body">
+							              Email organizing chairs: lld2017[at]googlegroups[dot]com							            </div>
+							          </div>
+							        </div>
+
+							        <div class="panel panel-default">
+							          <div class="panel-heading">
+							            <h4 class="panel-title">
+							              <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+							                <span class="fa fa-angle-up"></span> How are the papers reviewed?							              </a>
+							            </h4>
+							          </div>
+							          <div id="collapseFive" class="panel-collapse collapse">
+							            <div class="panel-body">
+							             Submissions are reviewed through a confidential double-blind process.
+							            </div>
+							          </div>
+							        </div>
+
+		        <div class="panel panel-default">
+							          <div class="panel-heading">
+							            <h4 class="panel-title">
+							              <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+							                <span class="fa fa-angle-up"></span> I can not attend, what can I do?							              </a>
+							            </h4>
+							          </div>
+							          <div id="collapseSix" class="panel-collapse collapse">
+							            <div class="panel-body">
+							             We strongly encourage at least one author per submission to attend the workshop to present in person, however due to registration difficulties this year, submissions with no attending authors will still be considered.							            </div>
+							          </div>
+							        </div>
+
+
+
+		        <div class="panel panel-default">
+							          <div class="panel-heading">
+							            <h4 class="panel-title">
+							              <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
+							                <span class="fa fa-angle-up"></span> Are there some reviewers instructions?							              </a>
+							            </h4>
+							          </div>
+							          <div id="collapseSeven" class="panel-collapse collapse">
+							            <div class="panel-body">
+							             TBA					            </div>
+							          </div>
+							        </div>
+
+		
+
+
+							    </div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End FAQ -->
+
+
+
+
+
+
+
+
+
+		<!-- Start Register  -->
+		<section id="mu-register">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="mu-register-area">
+
+							<div class="mu-title-area">
+								<h2 class="mu-title">Accepted papers</h2>
+								<p>TBA</p>
+							</div>
+
+							</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Register -->
+
+
+
+
+
+		<!-- Start Contact -->
+		<section id="mu-contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="mu-contact-area">
+
+							<div class="mu-title-area">
+								<h2 class="mu-heading-title">Organisers</h2>
+								
+<ul class="org"><li >Isabelle Augenstein</li>
+<li>Stephen Bach</li>
+<li>Matthew Blaschko</li>
+<li>Eugene Belilovsky</li>
+<li>Edouard Oyallon</li>
+<li>Anthony Platanios</li>
+<li>Alex Ratner</li>
+<li>Christopher Re</li>
+<li>Xiang Ren</li>
+<li>Paroma Varma</li>
+</ul>
+<h2 class="mu-heading-title">Reviewers</h2>
+<p>We would like to thank all our reviewers.</p>
+							</div>
+
+
+							<!-- Start Contact Content 							<div class="mu-contact-content">
+								<div class="row">
+
+								<div class="col-md-12">
+									<div class="mu-contact-form-area">
+										<div id="form-messages"></div>
+											<form id="ajax-contact" method="post" action="mailer.php" class="mu-contact-form">
+												<div class="form-group">                
+													<input type="text" class="form-control" placeholder="Name" id="name" name="name" required>
+												</div>
+												<div class="form-group">                
+													<input type="email" class="form-control" placeholder="Enter Email" id="email" name="email" required>
+												</div>              
+												<div class="form-group">
+													<textarea class="form-control" placeholder="Message" id="message" name="message" required></textarea>
+												</div>
+												<button type="submit" class="mu-send-msg-btn"><span>SUBMIT</span></button>
+								            </form>
+										</div>
+									</div>
+								</div>
+							</div>
+							End Contact Content -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Contact -->
+
+	</main>
+	
+	<!-- End main content -->	
+			
+			
+	<!-- Start footer -->
+	<footer id="mu-footer" role="contentinfo">
+			<div class="container">
+				<div class="mu-footer-area">
+					<div class="mu-footer-top">
+						<div class="mu-social-media">
+							<!--<a href="#"><i class="fa fa-facebook"></i></a>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+							<a href="#"><i class="fa fa-google-plus"></i></a>
+							<a href="#"><i class="fa fa-linkedin"></i></a>
+							<a href="#"><i class="fa fa-youtube"></i></a>-->
+						</div>
+					</div>
+					<div class="mu-footer-bottom">
+						<p class="mu-copy-right">&copy; Copyright <a rel="nofollow" href="http://markups.io">markups.io</a>. All right reserved.</p>
+					</div>
+				</div>
+			</div>
+
+	</footer>
+	<!-- End footer -->
+
+	
+	
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+	<!-- Slick slider -->
+    <script type="text/javascript" src="assets/js/slick.min.js"></script>
+    <!-- Event Counter -->
+    <script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
+    <!-- Ajax contact form  -->
+    <script type="text/javascript" src="assets/js/app.js"></script>
+  
+       
+	
+    <!-- Custom js -->
+	<script type="text/javascript" src="assets/js/custom.js"></script>
+
+	
+	
     
-    </section>
-
-
-    <section id="people" class="section partner">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-
-                    <h3 class="section-title">People</h3>
-<h4>Organizers</h4>
-<ul>
-<li><a href="http://isabelleaugenstein.github.io/">Isabelle Augenstein, University of Copenhagen, Denmark</a></li>
-<li><a href="http://stephenbach.net">Stephen Bach, Stanford University, USA</a></li>
-<li><a href="http://eugenium.github.io/">Eugene Belilovsky, KU Leuven and University of Paris-Saclay</a></li>
-<li><a href="http://homes.esat.kuleuven.be/~mblaschk/">Matthew Blaschko, KU Leuven, Belgium</a></li>
-<li><a href="http://pub.ist.ac.at/~chl/">Christoph Lampert, IST Austria, Austria</a></li>
-<li><a href="https://edouardoyallon.github.io/">Edouard Oyallon, ENS -> INRIA Lille, France</a></li>
-<li><a href="http://platanios.org/">Emmanouil Antonios Platanios, Carnegie Mellon University, USA</a></li>
-<li><a href="http://alexratner.com/">Alexander Ratner, Stanford University, USA</a></li>
-<li><a href="https://cs.stanford.edu/people/chrismre/">Chris Ré, Stanford University, USA</a></li>
-
-</ul>
-<h4>Reviewers</h4>
-<ul>
-<li>Mathieu Andreux, ENS</li>
-<li>Maruan Al-Shedivat, CMU</li>
-<li>Maria Barrett, University of Copenhagen</li>
-<li>Maxim Berman, KU Leuven</li>
-<li>Joachim Bingel, University of Copenhagen</li>
-<li>Johannes Bjerva, University of Copenhagen,</li>
-<li>Brian Cheung, UC Berkeley</li>
-<li>Bogdan Cirstea, Télécom ParisTech</li>
-<li>Christoph Dann, CMU</li>
-<li>Tri Dao, Stanford</li>
-<li>Laurent Dinh, Université de Montréal</li>
-<li>Elvis Dohmatob, INRIA</li>
-<li>Jared Dunnmon, Stanford</li>
-<li>Henry Ehrenberg, Facebook</li>
-<li>Michael Eickenberg, UC Berkeley</li>
-<li>Georgios Exarchakis, ENS</li>
-<li>Enzo Ferrante, CONICET/UNL</li>
-<li>Lucie Flekova, Amazon</li>
-<li>Aina Frau-Pascual, Massachusetts General Hospital</li>
-<li>Ronan Fruit, INRIA</li>
-<li>Aditya Grover, Stanford</li>
-<li>Arthur Guillon, LIP6</li>
-<li>Braden Hancock, Stanford</li>
-<li>Bryan He, Stanford</li>
-<li>Chin-Wei Huang, Université de Montréal</li>
-<li>Jörn Jacobsen, University of Amsterdam</li>
-<li>Katharina Kann,  University of Munich</li>
-<li>Kyle Kastner, Université de Montréal</li>
-<li>Ravi Kiran, Uncanny Vision</li>
-<li>Géraud Le Falher, INRIA</li>
-<li>Joël Legrand, INRIA</li>
-<li>Vincent Lostanlen, Cornell Lab</li>
-<li>José Ignacio Orlando, UNCPBA, Argentina</li>
-<li>Mohammad Pezeshki, Université de Montréal</li>
-<li>Thomas Pumir, Princeton</li>
-<li>Amal Rannen, KU Leuven</li>
-<li>Mengye Ren, University of Toronto</li>
-<li>Xiang Ren, University of Southern California</li>
-<li>Stéphane Rivaud, Sony</li>
-<li>Sebastian Ruder,  Insight Research Centre for Data Analytics</li>
-<li>Abulhair Saparov, CMU</li>
-<li>Naomi Saphra, University of Edinburgh</li>
-<li>Damien Scieur, INRIA</li>
-<li>Daniel Selsam, Stanford</li>
-<li>Konstantinos Skianis,  Ecole Polytechnique</li>
-<li>Louis Thiry, ENS</li>
-<li>Mariya Toneva, CMU</li>
-<li>Eleni Triantafillou, University of Toronto</li>
-<li>Stavros Tsogkas, University of Toronto</li> 
-<li>Jonathan Vacher, Albert Einstein College of Medicine</li>
-<li>Paroma Varma, Stanford</li>
-<li>Claire Vernade, Télécom ParisTech</li>
-<li>Irene Waldspurger, CNRS</li>
-<li>Johannes Welbl, University College London</li>
-<li>Jian Zhang, Louisiana State University</li>
-<li>Sixin Zhang, ENS</li>
-</ul>
-</div>
-                </div>
-            </div>
-    </section>
-
-
-    <footer class="site-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <p class="site-info">Designed and Developed by <a href="http://technextit.com">Technext Limited</a></p>
-<!--                    <ul class="social-block">
-                        <li><a href=""><i class="ion-social-twitter"></i></a></li>
-                        <li><a href=""><i class="ion-social-facebook"></i></a></li>
-                        <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
-                        <li><a href=""><i class="ion-social-googleplus"></i></a></li>
-                    </ul>-->
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- script -->
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
-    <script src="assets/js/main.js"></script>
-</body>
+  </body>
 </html>
